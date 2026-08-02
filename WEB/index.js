@@ -1,8 +1,8 @@
-const read=document.getElementById("count-el").textContent
-count=Number(read)
+const read=document.getElementById("count-el")
+count=Number(read.textContent)
 function increment(){
     count=count+1
-    document.getElementById("count-el").innerText=String(count)
+    read.innerText=String(count)
 }
 var out=document.getElementById("prev").textContent
 function save(){
@@ -13,5 +13,5 @@ function save(){
     count=0
     //
     // 
-    document.getElementById("count-el").innerText=count
+    read.innerText=count
 }
