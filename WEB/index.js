@@ -1,7 +1,6 @@
 let str1 = ''
 let str2 = ''
 let str3 = ''
-let out
 function num(id) {
     r = String(id)
     if (r != 'sum' && r != 'sub' && r != 'prd' && r != 'div' && r != 'eq') {
@@ -15,25 +14,33 @@ function num(id) {
         }
 
     }
+
     else {
-        if ((document.getElementById(r).textContent)!='=') 
-        {
+        if ((document.getElementById(r).textContent) != '=') {
             str2 += document.getElementById(r).textContent
             document.getElementById("op").innerText = str2
         }
-        else
-        {
-            num1=Number(str1)
-            num2=Number(str3)
-            if ((document.getElementById(r).textContent)=='+') 
-            {
-               out=num1+num2
-               document.getElementById("out").innerText=out
+        else {
+            let num1 = Number(str1)
+            let num2 = Number(str3)
+            let out;
+
+            if (str2 === '+') {
+                out = num1 + num2
+            } else if (str2 === '-') {
+                out = num1 - num2
+            } else if (str2 === '*') {
+                out = num1 * num2
+            } else if (str2 === '/') {
+                out = num1 / num2
             }
 
+            OUTPUT ='='+ out
+            document.getElementById("out").innerText = OUTPUT
+            console.log(OUTPUT)
         }
-        
     }
+
 }
 
 
