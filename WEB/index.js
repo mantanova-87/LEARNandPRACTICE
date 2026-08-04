@@ -16,8 +16,16 @@ function num(id) {
 
     }
     else {
-        str2 += document.getElementById(r).textContent
-        document.getElementById("op").innerText = str2
+        if ((document.getElementById(r).textContent)!='=') 
+        {
+            str2 += document.getElementById(r).textContent
+            document.getElementById("op").innerText = str2
+        }
+        else
+        {
+            if
+        }
+        
     }
 }
 
