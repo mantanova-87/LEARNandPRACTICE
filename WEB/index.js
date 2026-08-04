@@ -23,7 +23,14 @@ function num(id) {
         }
         else
         {
-            if
+            num1=Number(str1)
+            num2=Number(str3)
+            if ((document.getElementById(r).textContent)=='+') 
+            {
+               out=num1+num2
+               document.getElementById("out").innerText=out
+            }
+
         }
         
     }
