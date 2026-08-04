@@ -5,8 +5,15 @@ let out
 function num(id) {
     r = String(id)
     if (r != 'sum' && r != 'sub' && r != 'prd' && r != 'div' && r != 'eq') {
-        str1 += document.getElementById(r).textContent
-        document.getElementById("n1").innerText = str1
+        if (str2 != '') {
+            str3 += document.getElementById(r).textContent
+            document.getElementById("n2").innerText = str3
+        }
+        else {
+            str1 += document.getElementById(r).textContent
+            document.getElementById("n1").innerText = str1
+        }
+
     }
     else {
         str2 += document.getElementById(r).textContent
