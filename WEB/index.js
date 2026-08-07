@@ -14,7 +14,6 @@ function num(id) {
         }
 
     }
-
     else {
         if ((document.getElementById(r).textContent) != '=') {
             str2 += document.getElementById(r).textContent
