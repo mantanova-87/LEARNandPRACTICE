@@ -37,5 +37,5 @@ void whiledemo(void)
     {
         break;
     }
-    
+    cout<<""
 }
